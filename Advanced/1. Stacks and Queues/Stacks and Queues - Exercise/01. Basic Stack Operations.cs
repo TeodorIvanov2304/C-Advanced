@@ -27,6 +27,7 @@
 
             //}
 
+            //Може да се изписва и stack.Any() вместо stack.Count>0, т.е докато има нещо в stack-a
             while (stack.Count>0 && valuesToPop>0)
             {
                 stack.Pop();
