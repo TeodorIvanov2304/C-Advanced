@@ -31,6 +31,18 @@ namespace ReadingJaggedArrays
                 }
                 Console.WriteLine();
             }
+
+
+            //PRINT WITH FOREACH
+
+            foreach (int[]row in jagged)
+            {
+                for (int col = 0; col < row.Length; col++)
+                {
+                    Console.Write(row[col]);
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
