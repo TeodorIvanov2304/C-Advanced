@@ -50,6 +50,13 @@ namespace _07._Pascal_Triangle
                 }
                 Console.WriteLine();
             }
+
+
+            //Изпечатване с foreach
+            foreach (long[]row in pascalTriangle)
+            {
+                Console.WriteLine(string.Join(" ", row));
+            }
         }
     }
 }
