@@ -23,7 +23,8 @@
 
             //С командата IntersectWith, двата сета се събират, и остават само НЕповтарящите се елементи в тях
             firstSet.IntersectWith(secondSet);
-
+            //2-ри вариант
+            //var newSet = firstSet.Intersect(secondSet);
             foreach (var number in firstSet)
             {
                 Console.Write($"{number} ");
