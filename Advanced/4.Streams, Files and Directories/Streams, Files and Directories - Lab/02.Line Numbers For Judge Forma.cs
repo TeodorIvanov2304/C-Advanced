@@ -3,7 +3,8 @@
     public class LineNumbers
     {
         static void Main()
-        {
+        {    
+            //Реалативен път! ..\..\..\ значи 3 папки назад
             string inputPath = @"..\..\..\Files\input.txt";
             string outputPath = @"..\..\..\Files\output.txt";
 
