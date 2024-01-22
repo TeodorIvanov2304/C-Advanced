@@ -1,0 +1,41 @@
+﻿namespace OddLines
+{
+    public class OddLines
+    {
+        static void Main()
+        {
+            string inputFilePath = @"..\..\..\Files\input.txt";
+            string outputFilePath = @"..\..\..\Files\output.txt";
+
+            ExtractOddLines(inputFilePath, outputFilePath);
+        }
+
+        public static void ExtractOddLines(string inputFilePath, string outputFilePath)
+        {
+            using (StreamReader reader = new StreamReader(inputFilePath))
+            {   
+                //Стрийрайтъра винаги е вложен в стриймрийдъра
+                using (StreamWriter writer = new StreamWriter(outputFilePath))
+                {
+                    int lineNumber = 0;
+
+                    //Докато = true
+                    while (!reader.EndOfStream)
+                    {
+                        lineNumber++;
+                        //Четем ред от променливата reader, която чете от inputFilePath(файл)
+                        string line = reader.ReadLine();
+                        if (lineNumber %2 == 1)
+                        {
+                            continue;
+                        }
+                        //Изпечатваме line, който отговаря на редовете през 1, които четем от input.txt
+                        //Ако го оставя Console, вместо writer, дава Runtime error
+                        writer.WriteLine(line);
+                    }
+                }
+            }
+        }
+    }
+
+}
