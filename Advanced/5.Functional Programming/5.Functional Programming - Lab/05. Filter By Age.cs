@@ -35,6 +35,7 @@
             foreach (var person in people)
             {   
                 //If predicate from person == true (younger or older)
+                //Check all persons, and print it with formatter refference
                 if (preciate(person))
                 {   
                     //Print format, when the given format = name, age or name age
