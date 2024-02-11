@@ -63,6 +63,9 @@ namespace MailClient
                 }
             }
             return longestMail.ToString();
+
+            //Кратко
+            //Mail longest = Inbox.OrderBy(m=>m.Body).First();
         }
 
         public string InboxView()
